@@ -7,6 +7,9 @@ This folder contains local-first utilities to make agent workflows safer and mor
 - `redactor.py` — redact secrets/PII from text/logs.
 - `cron_lint.py` — lint and simulate cron/interval schedules for OpenClaw-style job JSON.
 - `content_firewall.py` — detect/strip instruction-like text from untrusted sources (prompt-injection firewall).
+- `network_airlock.py` — run a command with network access blocked (best-effort; macOS uses sandbox-exec when available).
+- `secrets_scan.py` — scan staged/tracked files for likely secrets/PII (use with pre-commit).
+- `install_precommit.py` — install a pre-commit hook that runs secrets_scan on staged changes.
 
 ## Requirements
 
