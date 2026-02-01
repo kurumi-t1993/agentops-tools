@@ -68,12 +68,13 @@ def load_allowlist(path: str) -> List[re.Pattern[str]]:
     if not os.path.exists(path):
         return []
     pats: List[re.Pattern[str]] = []
-    for line in open(path, "r", encoding="utf-8", errors="ignore"):
-        line = line.strip()
-        if not line or line.startswith("#"):
-            continue
-        # treat as regex
-        pats.append(re.compile(line))
+    with open(path, "r", encoding="utf-8", errors="ignore") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            # treat as regex
+            pats.append(re.compile(line))
     return pats
 
 

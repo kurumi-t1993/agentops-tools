@@ -14,7 +14,7 @@ class TestSecretsScan(unittest.TestCase):
         # allowlist regex should suppress
         import tempfile
         with tempfile.NamedTemporaryFile("w", delete=False) as f:
-            f.write(r"ghp_\\w+\n")
+            f.write(r"ghp_.*\n")
             p = f.name
         allow = load_allowlist(p)
         text = "ghp_" + "a" * 30
