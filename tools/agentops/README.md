@@ -51,3 +51,5 @@ It prints:
 Tip: if you don’t have JSON handy, you can paste the `cron list` output from the OpenClaw tools into a file.
 - `cron_sanitize.py` — redact OpenClaw cron list JSON for safe sharing.
 - `receipts_builder.py` — generate a reproducible work receipt (git status/commit/diffstat + commands).
+-  — generate a human-readable runbook from OpenClaw cron job JSON.
+-  — generate a simple offline HTML dashboard from local metrics logs.
