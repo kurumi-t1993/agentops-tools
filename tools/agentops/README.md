@@ -52,6 +52,8 @@ Tip: if you don’t have JSON handy, you can paste the `cron list` output from t
 
 ### Other utilities
 
+- `dep_vet.py` — offline-first dependency vetting (PyPI/npm) with guarded online fetch.
+- `agentops_suite.py` — run tests + secrets scan + (optional) airlock + receipt in one command.
 - `policy_gate.py` — lightweight policy manifest gate for commands/writes/capabilities.
 - `mock_api.py` — local mock HTTP API server (offline integration testing).
 - `regression_harness.py` — snapshot-based regression harness for commands (record/check).
