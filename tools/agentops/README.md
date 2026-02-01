@@ -6,6 +6,7 @@ This folder contains local-first utilities to make agent workflows safer and mor
 
 - `redactor.py` — redact secrets/PII from text/logs.
 - `cron_lint.py` — lint and simulate cron/interval schedules for OpenClaw-style job JSON.
+- `content_firewall.py` — detect/strip instruction-like text from untrusted sources (prompt-injection firewall).
 
 ## Requirements
 
