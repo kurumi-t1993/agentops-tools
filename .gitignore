@@ -17,3 +17,6 @@ __pycache__/
 
 # macOS
 .DS_Store
+
+# Local cron snapshot (contains identifiers)
+tools/agentops/cron_jobs.current.json
