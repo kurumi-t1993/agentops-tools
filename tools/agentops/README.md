@@ -52,6 +52,9 @@ Tip: if you don’t have JSON handy, you can paste the `cron list` output from t
 
 ### Other utilities
 
+- `policy_gate.py` — lightweight policy manifest gate for commands/writes/capabilities.
+- `mock_api.py` — local mock HTTP API server (offline integration testing).
+- `regression_harness.py` — snapshot-based regression harness for commands (record/check).
 - `cron_sanitize.py` — redact OpenClaw cron list JSON for safe sharing.
 - `receipts_builder.py` — generate a reproducible work receipt (git status/commit/diffstat + commands).
 - `runbook_gen.py` — generate a human-readable runbook from OpenClaw cron job JSON.
