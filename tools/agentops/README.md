@@ -52,6 +52,7 @@ Tip: if you don’t have JSON handy, you can paste the `cron list` output from t
 
 ### Other utilities
 
+- `audit_report.py` — diff sanitized cron snapshots and emit a short security audit report.
 - `dep_vet.py` — offline-first dependency vetting (PyPI/npm) with guarded online fetch.
 - `agentops_suite.py` — run tests + secrets scan + (optional) airlock + receipt in one command.
 - `policy_gate.py` — lightweight policy manifest gate for commands/writes/capabilities.
