@@ -49,3 +49,5 @@ It prints:
 - a schedule preview of each job’s next run(s) within the horizon
 
 Tip: if you don’t have JSON handy, you can paste the `cron list` output from the OpenClaw tools into a file.
+- `cron_sanitize.py` — redact OpenClaw cron list JSON for safe sharing.
+- `receipts_builder.py` — generate a reproducible work receipt (git status/commit/diffstat + commands).
