@@ -1,0 +1,19 @@
+# OpenClaw workspace noise
+memory/
+memory/**
+Users/**
+
+# Logs/media
+*.log
+*.log.*
+*.jsonl
+*.vtt
+*.png
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# macOS
+.DS_Store
