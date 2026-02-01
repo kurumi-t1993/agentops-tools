@@ -20,3 +20,6 @@ __pycache__/
 
 # Local cron snapshot (contains identifiers)
 tools/agentops/cron_jobs.current.json
+
+# AgentOps private artifacts
+tools/agentops/private/
