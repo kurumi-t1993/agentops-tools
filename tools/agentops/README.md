@@ -27,7 +27,7 @@ python3 -m unittest -q
 Redact stdin → stdout:
 
 ```bash
-echo 'Authorization: Bearer abcdef1234567890' | python3 redactor.py
+echo 'Authorization: Bearer token' | python3 redactor.py
 ```
 
 Redact a file and write a `.redacted` copy:
@@ -49,7 +49,10 @@ It prints:
 - a schedule preview of each job’s next run(s) within the horizon
 
 Tip: if you don’t have JSON handy, you can paste the `cron list` output from the OpenClaw tools into a file.
+
+### Other utilities
+
 - `cron_sanitize.py` — redact OpenClaw cron list JSON for safe sharing.
 - `receipts_builder.py` — generate a reproducible work receipt (git status/commit/diffstat + commands).
--  — generate a human-readable runbook from OpenClaw cron job JSON.
--  — generate a simple offline HTML dashboard from local metrics logs.
+- `runbook_gen.py` — generate a human-readable runbook from OpenClaw cron job JSON.
+- `ops_dashboard.py` — generate a simple offline HTML dashboard from local metrics logs.
