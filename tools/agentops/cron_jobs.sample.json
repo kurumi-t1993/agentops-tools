@@ -1,0 +1,18 @@
+{
+  "jobs": [
+    {
+      "id": "example-every-15m",
+      "name": "Example interval job",
+      "enabled": true,
+      "schedule": {"kind": "every", "everyMs": 900000},
+      "payload": {"kind": "agentTurn", "timeoutSeconds": 120, "message": "Do a thing"}
+    },
+    {
+      "id": "example-daily-8am",
+      "name": "Example daily job",
+      "enabled": true,
+      "schedule": {"kind": "cron", "expr": "0 8 * * *", "tz": "Asia/Tokyo"},
+      "payload": {"kind": "agentTurn", "timeoutSeconds": 120, "message": "Do a thing"}
+    }
+  ]
+}
